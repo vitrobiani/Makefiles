@@ -32,5 +32,7 @@ git clone https://github.com/vitrobiani/fish-setup fish
 sudo apt install fish
 chsh -s /usr/bin/fish
 
+sudo apt install -y cowsay
 
+echo "all finished" |cowsay
 
