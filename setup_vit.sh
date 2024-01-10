@@ -6,11 +6,11 @@ if [[ ! -d .config ]]; then
     mkdir .config
 fi
 
-sudo apt install git
+sudo apt install git -y
 
 #tools
-sudo apt install gcc clang cmake
-sudo apt-get install ninja-build gettext cmake unzip curl
+sudo apt install gcc clang cmake -y
+sudo apt-get install ninja-build gettext cmake unzip curl -y
 
 #put this in powersell to sync clipboards
 #Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
