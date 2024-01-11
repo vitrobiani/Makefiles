@@ -25,14 +25,16 @@ sudo make install
 cd ~
 cd .config
 
+sudo apt install fish
+rm -rf fish
+
 #setups
 git clone https://github.com/vitrobiani/nvim-setup nvim
 git clone https://github.com/vitrobiani/fish-setup fish
 
-sudo apt install fish
 chsh -s /usr/bin/fish
 
 sudo apt install -y cowsay
 
-echo "all finished" |cowsay
+echo "all finished\!" |cowsay
 
