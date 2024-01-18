@@ -2,7 +2,7 @@ f=*.c
 obj=*.o
 exe=prog
 CC=gcc
-FLAGS=
+FLAGS= -lm
 
 $(exe): $(obj) $f
 	$(CC) $(FLAGS) $(obj) -o prog
