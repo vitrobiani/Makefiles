@@ -1,0 +1,63 @@
+search by title: --<TITLE>--
+search by sub-title: #<SUB-TITLE>#
+<leader> = spacebar
+(SC) = shortcut
+searching in neovim: in N mode type /
+
+
+table:
+-neovim configs
+#commands
+#keyboard shortcuts N mode
+#keyboard shortcuts V mode
+#keyboard shortcuts I mode
+
+
+
+--neovim configs:--
+#comands#
+**always start with a colon ':' in N mode.
+
+    :wq - save and quit
+    :w - save
+    :q - quit (will not quit if file not saved) or exit any opened buffer
+    :q! - quit by all means
+    :so - shout out an update you do in the config files
+    :PackerSync - update all packges listed in the packer.lua config file
+    :so && PackerSync (SC) - <leader><leader>
+    :terminal -  open terminal in nvim buffer (press i to write and exit to exit)
+
+#keyboard shortcuts N mode#
+    i - insert
+    a - append
+    s - del char under curser and insest
+    v - visual mode
+    C-v - visual block
+    R - replace mode
+    
+    <leader>pv - netrow file explorer
+    <leader> ff - find files in diractory
+    <leader> gf - find files in git repo
+    <leader>x - make file executable (chmod +x)
+    <leader>f - format file according to lsp
+    <leader>s - refactor through whole file
+    <leader>vrr - view all refrences under curser
+    <leader>vrn - refactor all refernces under curser
+    <leader>t - open terminal in nvim buffer (press i to write and exit to exit)
+    <leader>u - open undo tree
+
+
+    C-z - brings vim to background
+    **type fg (foreground to bring back)
+    gC-g - gives you the word count and current position in file
+    C-d - go down
+    C-u - go up
+    C-r - redo
+
+    u - undo
+    p - add a line under curser
+    o - p and insert
+    dd - delete line
+    daw - del a word
+    caw - del a word and insert
+    gd - enter definition under curser (like ctrl clicking in ide)
