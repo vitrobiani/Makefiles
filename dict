@@ -12,11 +12,16 @@ table:
 #keyboard shortcuts V mode
 #keyboard shortcuts I mode
 
+-tmux configs
+#keyboard shortcuts
+
+-fish configs
+#commands shortcuts
 
 
 --neovim configs:--
 #comands#
-**always start with a colon ':' in N mode.
+    **always start with a colon ':' in N mode.
 
     :wq - save and quit
     :w - save
@@ -36,15 +41,18 @@ table:
     R - replace mode
     
     <leader>pv - netrow file explorer
-    <leader> ff - find files in diractory
-    <leader> gf - find files in git repo
+    <leader>ff - find files in diractory
+    <leader>gf - find files in git repo
     <leader>x - make file executable (chmod +x)
     <leader>f - format file according to lsp
-    <leader>s - refactor through whole file
+    <leader>s - refactor through whole file, even ones not in scope
     <leader>vrr - view all refrences under curser
-    <leader>vrn - refactor all refernces under curser
+    <leader>vrn - refactor all refernces under curser, only in scope!
     <leader>t - open terminal in nvim buffer (press i to write and exit to exit)
     <leader>u - open undo tree
+    <leader>dd - gdb debugging for c, c++, assambely, rust, go and ada 
+    <leader>dp - debug for python
+    <leader>nt - toggle side file tree bar
 
 
     C-z - brings vim to background
@@ -52,8 +60,10 @@ table:
     gC-g - gives you the word count and current position in file
     C-d - go down
     C-u - go up
+    C-x - will subtrect 1 to a number under the curser, if no number under curser it will tp you to a close one
+    C-a - will add 1 to a number under the curser, if no number under curser it will tp you to a close one
     C-r - redo
-
+    
     u - undo
     p - add a line under curser
     o - p and insert
@@ -61,3 +71,23 @@ table:
     daw - del a word
     caw - del a word and insert
     gd - enter definition under curser (like ctrl clicking in ide)
+
+#keyboard shortcuts I mode#
+    C-c - <esc> key, exit I mode to N mode
+    C-w - delete the word behind the curser
+    C-e - close autocomletion bar (snippets menu)
+    C-i - like a <tab>
+    C-o - enter N mode for one command
+    C-a - pastes the what ever you last wrote before prssing <enter>
+    C-d - unindent a line
+    C-j - go down one line (and add one), like pressing enter
+    C-z - enter background (see same in N mode)
+    C-v - enter the key name in <>
+    C-n - offers possible completions based on patterns
+    C-p - preety much same as C-n
+    C-t - tab
+    C-y - copies the char from the line above
+    C-u - undo
+
+
+
