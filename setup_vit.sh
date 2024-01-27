@@ -23,6 +23,12 @@ cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
 
 cd ~
+cp ~/Makefiles/.configFiles/.clang-format ~
+
+sudo apt install tmux -y
+cp ~/Makefiles/.configFiles/.tmux.conf ~
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 cd .config
 
 sudo apt install fish
