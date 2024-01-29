@@ -10,13 +10,17 @@ if [[ ! -d .config ]]; then
 fi
 
 cd ~/Makefiles/setup_files
-
-./installs.sh
-./neovim_build.sh
-./configs.sh
-./ohMyTmux.sh
+sudo bash installs.sh
+sleep 5
+sudo bash neovim_build.sh
+sleep 5
+sudo bash configs.sh
+sleep 5
+sudo bash ohMyTmux.sh
+sleep 5
 
 sudo chsh -s /usr/bin/fish
 
-echo "all finished\!" | cowsay
+sleep 5
+cowsay "all finished\!"
 
