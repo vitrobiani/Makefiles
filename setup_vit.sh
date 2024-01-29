@@ -2,45 +2,21 @@
 
 cd ~
 
+sudo apt update -y
+sudo apt upgrade -y
+
 if [[ ! -d .config ]]; then
     mkdir .config
 fi
 
-sudo apt install git -y
+cd ~/Makefiles/setup_files
 
-#tools
-sudo apt install gcc clang cmake -y
-sudo apt-get install ninja-build gettext cmake unzip curl -y
+./installs.sh
+./neovim_build.sh
+./configs.sh
+./ohMyTmux.sh
 
-#put this in powersell to sync clipboards
-#Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-#Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-#scoop install win32yank
+sudo chsh -s /usr/bin/fish
 
-#install neovim
-git clone https://github.com/neovim/neovim
-cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
-sudo make install
-
-cd ~
-cp ~/Makefiles/.configFiles/.clang-format ~
-
-sudo apt install tmux -y
-cp ~/Makefiles/.configFiles/.tmux.conf ~
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-cd .config
-
-sudo apt install fish
-rm -rf fish
-
-#setups
-git clone https://github.com/vitrobiani/nvim-setup nvim
-git clone https://github.com/vitrobiani/fish-setup fish
-
-chsh -s /usr/bin/fish
-
-sudo apt install -y cowsay
-
-echo "all finished\!" |cowsay
+echo "all finished\!" | cowsay
 
