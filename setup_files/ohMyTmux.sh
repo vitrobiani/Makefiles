@@ -4,4 +4,4 @@ cd ~
 git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
 cp .tmux/.tmux.conf.local .
-cd ~/Makefiles/setup_files/
+cd Makefiles/setup_files/

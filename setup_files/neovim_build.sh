@@ -8,7 +8,9 @@ cd ~
 
 #install neovim
 git clone https://github.com/neovim/neovim
+sleep 1
 cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
+sleep 1
 sudo make install
-
-cd ~/Makefiles/setup_files
+sleep 1
+cd Makefiles/setup_files

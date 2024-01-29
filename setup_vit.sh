@@ -9,17 +9,16 @@ if [[ ! -d .config ]]; then
     mkdir .config
 fi
 
-cd ~/Makefiles/setup_files
-sudo ./installs.sh
+cd setup_files
+sleep 2
+./installs.sh
 sleep 3
-sudo ./neovim_build.sh
+./neovim_build.sh
 sleep 3
-sudo ./configs.sh
+./configs.sh
 sleep 3
-sudo ./ohMyTmux.sh
+./ohMyTmux.sh
 sleep 3
-
-sudo chsh -s /usr/bin/fish
 
 sleep 5
 cowsay "all finished\!"
