@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -x
 # Define a function to handle errors
 handle_error() {
     echo "An error occurred in the script"
@@ -54,5 +54,5 @@ fi
 sleep 3
 
 sleep 5
-cowsay "all finished\!"
+$(which cowsay) "all finished\!"
 
