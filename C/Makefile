@@ -2,7 +2,7 @@ f=*.c
 objs=*.o
 exe=prog
 CC=gcc
-FLAGS=-lm
+FLAGS=-lm -Wall -Werror 
 DEBUG=-g
 
 $(exe): $(objs) $f

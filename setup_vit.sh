@@ -17,7 +17,7 @@ if [[ ! -d .config ]]; then
     mkdir .config
 fi
 
-cd Makefiles/setup_files
+cd /home/$USER/Makefiles/setup_files
 if [ $? -eq 0 ]; then
     echo "setup_files succeeded"
 else
